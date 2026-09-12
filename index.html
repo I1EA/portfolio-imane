@@ -131,9 +131,10 @@
         /* About Section */
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 2rem;
-            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .about-text p {
@@ -143,24 +144,9 @@
             line-height: 1.8;
         }
 
-        .about-image {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-        }
-
         @media (max-width: 768px) {
             .about-content {
                 grid-template-columns: 1fr;
-            }
-
-            .about-image {
-                margin: 0 auto;
             }
         }
 
@@ -393,11 +379,11 @@
                 <p>
                     I'm a passionate developer with a focus on creating innovative solutions to real-world problems. 
                     My experience spans across full-stack development, including Python libraries, web applications, 
-                    and mobile-first projects.
+                    and privacy-preserving technologies.
                 </p>
                 <p>
                     I believe in writing clean, maintainable code and designing user-centered experiences. 
-                    Whether it's building privacy-focused applications or crafting interactive tools, 
+                    Whether it's building secure applications, developing libraries, or crafting interactive tools, 
                     I'm committed to making technology accessible and impactful.
                 </p>
                 <p>
@@ -405,7 +391,6 @@
                     and continuously learning to stay at the forefront of software development.
                 </p>
             </div>
-            <div class="about-image fade-in">💻</div>
         </div>
     </section>
 
@@ -417,13 +402,13 @@
             <div class="project-card fade-in">
                 <h3>🌾 Torba</h3>
                 <p>
-                    A pesticide safety checker application that helps users identify and understand pesticide 
-                    information quickly and reliably. Built with a focus on user safety and accessibility.
+                    A pesticide safety checker built with Python and Streamlit. Helps users quickly identify 
+                    and understand pesticide information with a focus on accessibility and user safety.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">Web App</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
                     <span class="tag">Safety</span>
-                    <span class="tag">React</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/I1EA/Torba" target="_blank">View Code</a>
@@ -451,13 +436,13 @@
             <div class="project-card fade-in">
                 <h3>🔐 Chuba</h3>
                 <p>
-                    A privacy-focused travel application that prioritizes user data protection and provides 
-                    personalized travel recommendations without compromising personal information.
+                    A privacy-focused travel regulations app leveraging Midnight ZK proofs for secure verification. 
+                    Helps travelers understand compliance requirements while maintaining privacy.
                 </p>
                 <div class="project-tags">
-                    <span class="tag">Mobile App</span>
-                    <span class="tag">Privacy</span>
+                    <span class="tag">ZK Proofs</span>
                     <span class="tag">Travel</span>
+                    <span class="tag">Privacy</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/I1EA/Chuba" target="_blank">View Code</a>
@@ -468,13 +453,13 @@
             <div class="project-card fade-in">
                 <h3>🎬 Stranger in the Middle</h3>
                 <p>
-                    An innovative WebMCP application for movie seat booking. Features real-time availability, 
-                    interactive seat selection, and seamless reservation management.
+                    A WebMCP movie seat booking platform designed for groups to book seats together and split payments seamlessly. 
+                    Simplifies the group booking experience with real-time collaboration.
                 </p>
                 <div class="project-tags">
                     <span class="tag">WebMCP</span>
                     <span class="tag">Booking</span>
-                    <span class="tag">React</span>
+                    <span class="tag">Payments</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/I1EA/Stranger-in-the-Middle" target="_blank">View Code</a>
@@ -501,9 +486,9 @@
                 <h3>Backend</h3>
                 <ul class="skill-list">
                     <li>Python</li>
+                    <li>Streamlit</li>
                     <li>Node.js</li>
                     <li>RESTful APIs</li>
-                    <li>Database Design</li>
                 </ul>
             </div>
 
@@ -512,8 +497,8 @@
                 <ul class="skill-list">
                     <li>Git & GitHub</li>
                     <li>WebMCP</li>
+                    <li>Midnight ZK Proofs</li>
                     <li>VS Code</li>
-                    <li>DevTools</li>
                 </ul>
             </div>
 
@@ -547,7 +532,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Imane's Portfolio. Built with <span style="color: #00d4ff;">GitHub Copilot</span> 🤖</p>
+        <p>&copy; 2026 Imane's Portfolio. Built with <span style="color: #00d4ff;">GitHub Copilot</span> 🤖</p>
         <p style="font-size: 0.9rem; margin-top: 0.5rem;">Part of the "Use GitHub Copilot to Build a Simple Application" Challenge</p>
     </footer>
 
